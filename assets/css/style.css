@@ -1,12 +1,94 @@
-
-.jumbotron{
-    max-width: 75%;
-    margin: auto;
-    text-align: center;
+body{
+    background-image: url('../images/GOTbackgroundU.jpg');
+    color: white;
+    letter-spacing: 2px;
 }
-.mainContent{
-    max-width: 75%;
-    margin: auto;
+
+h1{
+    font-size: 100px;
+}
+
+#begin{
+    background-color:gray;
+    background-repeat: no-repeat;
+    width: 35%;
+    margin: 0 auto;
+    border-radius: 5px;
+    color:blacks;
+
+}
+
+.beginBox{
+    margin: 0 auto;
     text-align: center;
+    padding: 4%;
+    margin-top: 40%;
+}
+
+.answerBox{
+    margin: 0 auto;
+    text-align: center;
+    padding: 4%;
+}
+.wrongBox{
+    margin: 0 auto;
+    text-align: center;
+    padding: 4%;
+}
+label{
+    color:black;
+}
+
+#answers{
+    display: none;
+    background-color:gray;
+    background-repeat: no-repeat;
+    width: 40%;
+    margin: 0 auto;
+    padding: 2%;
+    margin-top: 15%;
+    font-size: 20px;
+}
+body .container {
+    background-color:gray;
+    height: 100%;
+    text-align: center;
+    display: none;
+    margin-bottom: 5%;
+    padding-bottom: 2%;
+    margin-top: 5%;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.questions {
+    font-size: 25px;
     
+}
+
+.ques,
+label {
+    padding: 1%;
+}
+
+header {
+    font-size: 60px;
+    color: black;
+    margin-top: 2%;
+}
+.timeRemain {
+    padding: 2%;
+    color: red;
+    font-size: 20px;
+}
+#timesUp {
+    display: none;
+    background-color:gray;
+    background-repeat: no-repeat;
+    width: 35%;
+    margin: 0 auto;
+    padding: 2%;
+    margin-top: 15%;
+    font-size: 21px;
 }

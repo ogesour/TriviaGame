@@ -6,37 +6,49 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <title>GOT Trivia</title>
 </head>
-<body >
-<div class="contianer">
-    
-    <div class="row">
-        <div class="col-md-12">
-            <div class="jumbotron">
-                <h1>Game Of Thrones Tivia</h1>
-                <p>You have 60 seconds to answer 10 questions.
-                </p>
-                <p>Click the button to begin</p>
-                <p><a class="btn btn-primary btn-lg" href="#" role="button">Take the Trial by Q&A?</a>
-                </p>
-             </div>
-        </div>
-    </div>
-    
-    <div class="row" class="mainContent">
-        <div class="col-md-12">
-            <h2 id="timeRemain">Time Remaining:</h2>
+
+<body>
+    <div id="begin">
+        <div class="beginBox">
+            <h1>Game of Thrones</h1>
+            <h3>Trial By Trivia!</h3>
+            <hr />
+            <p>You have 60 seconds to answer 10 questions</p>
+            <p>Click the Button to begin</p>
+            <button type="button" id="start-btn" class="btn btn-primary black-background white">Trial By Trivia</button>
         </div>
     </div>
 
-    <div class="row" class="mainContent">
-        <div class="col-md-12"><h3>blah blah blah blah?</h3>
+    <div id="answers">
+        <div class="answerBox">
+            <h2>Here are your results</h2>
+            <p id="correct">Correct Answers:</p>
+            <p id="wrongs">Wrong Answers</p>
         </div>
     </div>
-    <div class="questions">
-        <button type="button" class="btn btn-primary black-background white" id="sub-but">Submit</button>
+
+    <div id="timesUp">
+        <div class="wrongBox">
+            <h2 class="up">Times Up</h2>
+            <p>Here are your results</p>
+            <p id="correctNoTime">Correct Answers:</p>
+            <p id="wrongNoTime">Wrong Answers:</p>
+        </div>
     </div>
-</div>
+
+    <div class="container">
+     <header>Game Of Thrones Trivia</header>
+        <div class="row timeRemain">Time Remaining
+            <div id="time-remain">60</div>
+        </div>
+
+        <div class="questions">
+            <button type="button" class="btn btn-primary black-background white" id="sub-but">Submit</button>   
+        </div>
+    </div>
+    <script src="assets/javascript/app.js"></script>
 </body>
 </html>

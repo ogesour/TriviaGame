@@ -90,7 +90,7 @@ var questionDisplay = function(){
 
     for (var i = 0; i < 10; i++){
         $('.questions').prepend('<div class="' + questions[i].name + '"></div>');
-        $(questions[i].divClass).append('<div class="quest-title">' + questions[i].ques + '</div>'); 
+        $(questions[i].divClass).append('<div class="ques-title">' + questions[i].ques + '</div>'); 
 
         for (var j = 0; j <= 3; j++) {
             $(questions[i].divClass).append('<input type="radio" name="' + questions[i].name + '" value="' + questions[i].ans[j] + '"/><label for="' + labels[j] + '">' + questions[i].ans[j] + '</label>');

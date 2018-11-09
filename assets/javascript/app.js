@@ -3,42 +3,42 @@
 var questions = [{
             ques: "What is the name of Jon's direwolf?",
             ans: ["Hans", "Sean", "Joe", "Ghost"],
-            name: "direwolf",
+            name: "ghost",
             correct: "Ghost",
             divClass: ".ghost"
         },
         {
             ques: "Which name is given to the bastards of The Reach?",
             ans: ["Flowers", "Boys", "Unwanted", "jquery"],
-            name: "bastards",
+            name: "flowers",
             correct: "Flowers",
             divClass: ".flowers"
         },
         {
             ques: "Which House is a direct vassal of House Baratheon of King's Landing?",
             ans: ["Stark", "Stokeworth", "Tanksley", "Roshan"],
-            name: "baratheon",
+            name: "house",
             correct: "Stokeworth",
             divClass: ".house"
         },
         {
             ques: " In the first episode, King Robert Baratheon says 'In my dreams, I kill him every night.' To whom is the King referring and why?",
             ans: ["Joe", "Hans", "Rheagar Targaryen", "Sean"],
-            name: "Robert",
+            name: "rheagar",
             correct: "Rheagar Targaryen",
             divClass: ".rheagar"
         },
         {
             ques: " At Hoster Tully's funeral, who shot the burning arrow that hit its mark?",
             ans: ["Brynden Tully", "Jon Snow", "Rheagar Targaryen", "Littlefinger"],
-            name: "brynden",
+            name: "arrow",
             correct: "Brynden Tully",
             divClass: ".arrow"
         },
         {
             ques: " Who is king of Westeros when the the series begins?",
             ans: ["Robert Baratheon", "Jon Snow", "Geoffrey Baratheon", "YOU"],
-            name: "robert",
+            name: "king",
             correct: "Robert Baratheon",
             divClass: ".king"
         },
@@ -72,7 +72,7 @@ var questions = [{
         }
 
     ]
-    console.log(questions);
+   // console.log(questions);
 //End of  questions
 
 var labels = ["first", "second", "third", "forth"];
@@ -89,12 +89,17 @@ var questionDisplay = function(){
     $(".questions :not('#sub-but')").empty();
 
     for (var i = 0; i < 10; i++){
+        
         $('.questions').prepend('<div class="' + questions[i].name + '"></div>');
+
+        //console.log()
+
         $(questions[i].divClass).append('<div class="ques-title">' + questions[i].ques + '</div>'); 
 
         for (var j = 0; j <= 3; j++) {
             $(questions[i].divClass).append('<input type="radio" name="' + questions[i].name + '" value="' + questions[i].ans[j] + '"/><label for="' + labels[j] + '">' + questions[i].ans[j] + '</label>');
         }
+        console.log(questions[i]);
         $('questions').prepend('<hr />');
     }
 }

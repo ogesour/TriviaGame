@@ -64,7 +64,7 @@ body .container {
 
 .questions {
     font-size: 25px;
-    
+    /* overflow: scroll; */
 }
 
 .ques,
